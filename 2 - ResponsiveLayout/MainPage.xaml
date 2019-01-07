@@ -1,0 +1,103 @@
+﻿<Page
+    x:Class="_2___ResponsiveLayout.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Page.Resources>
+        <Style TargetType="ListViewItem">
+            <Setter Property="FontFamily" Value="Comic Sans MS"/>
+            <Setter Property="FontSize" Value="14"/>
+        </Style>
+    </Page.Resources>
+    
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="640"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <ListView Grid.Column="0" Margin="5">
+            <ListViewItem>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</ListViewItem>
+            <ListViewItem>Vivamus faucibus erat at urna fermentum, vitae rutrum metus condimentum.</ListViewItem>
+            <ListViewItem>Etiam scelerisque enim eu quam maximus malesuada.</ListViewItem>
+            <ListViewItem>Donec et eros sit amet risus scelerisque gravida.</ListViewItem>
+            <ListViewItem>Duis lacinia orci sit amet justo sagittis, luctus lacinia quam consectetur.</ListViewItem>
+            <ListViewItem>Ut suscipit sem at ultrices venenatis.</ListViewItem>
+            <ListViewItem>Maecenas a massa ac sem pulvinar hendrerit.</ListViewItem>
+            <ListViewItem>Duis at ligula cursus, euismod massa quis, pretium velit.</ListViewItem>
+            <ListViewItem>Vivamus ut nulla sed magna suscipit scelerisque.</ListViewItem>
+            <ListViewItem>Proin varius enim quis quam placerat, id tincidunt mauris dignissim.</ListViewItem>
+            <ListViewItem>Cras pellentesque dui quis justo suscipit mollis.</ListViewItem>
+            <ListViewItem>Cras eget lorem ut velit accumsan efficitur.</ListViewItem>
+            <ListViewItem>Sed eget erat bibendum nisl pulvinar facilisis.</ListViewItem>
+            <ListViewItem>Mauris feugiat nisi eget enim volutpat, vel bibendum ipsum maximus.</ListViewItem>
+            <ListViewItem>Vestibulum sed nisi accumsan, malesuada sapien et, volutpat justo.</ListViewItem>
+            <ListViewItem>Mauris volutpat lectus nec velit fermentum egestas.</ListViewItem>
+            <ListViewItem>Maecenas accumsan justo sed ultrices lobortis.</ListViewItem>
+            <ListViewItem>Cras lacinia mi quis nibh efficitur, ut sodales felis elementum.</ListViewItem>
+            <ListViewItem>Donec sit amet turpis in ligula dignissim pulvinar.</ListViewItem>
+            <ListViewItem>Nullam vel quam et tortor pellentesque fringilla vel eget justo.</ListViewItem>
+            <ListViewItem>Donec mattis leo sit amet diam iaculis convallis ac a nisl.</ListViewItem>
+        </ListView>
+        <RelativePanel Grid.Column="1" x:Name="DetailsPane" Margin="5">
+            <Image Source="Picasso.jpg" x:Name="Img" Width="250" Height="250" Margin="30" 
+                   RelativePanel.AlignVerticalCenterWithPanel="True"
+                   RelativePanel.RightOf="Details"/>
+            <Grid Margin="5,5,5,15" x:Name="Details" 
+                  RelativePanel.AlignLeftWithPanel="True" MaxWidth="450">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <TextBlock Text="Details" FontSize="20" HorizontalAlignment="Center" 
+                           Grid.Row="0" VerticalAlignment="Center" Foreground="Red"/>
+                <ScrollViewer Grid.Row="1">
+                    <TextBlock  FontFamily="Comic Sans MS" TextWrapping="Wrap" xml:space="preserve">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nisl tellus, vulputate mollis risus nec, placerat fringilla erat. Maecenas ullamcorper malesuada mauris sit amet placerat. Sed elit lorem, sagittis nec scelerisque sed, pharetra ac diam. Mauris et dui quis risus euismod tincidunt. Etiam vel molestie risus. Vivamus sodales pellentesque nibh, id efficitur purus tristique et. Nullam commodo, tellus at ullamcorper tempor, purus felis volutpat enim, vitae placerat lacus nulla a nulla. Praesent eget eros elit. Integer pulvinar sed magna et cursus. Nam tincidunt nibh lacus, in feugiat nisi rutrum sit amet. Morbi eget magna a nibh viverra condimentum eget nec arcu. 
+                Praesent luctus ante in sem malesuada egestas. Mauris posuere nunc sit amet augue posuere, eget pulvinar orci sodales. In facilisis metus lectus. Fusce ac eros ac tellus imperdiet pellentesque. Sed aliquet ornare sodales. Nullam euismod lacus sem, sit amet viverra odio porta nec. Nulla facilisi. Proin vestibulum, ante eget lacinia dignissim, nibh turpis consequat dolor, eget hendrerit orci ipsum eget arcu. Pellentesque sagittis ut dolor quis suscipit. Phasellus purus tellus, efficitur ut mattis maximus, mollis vel lorem. Vivamus ultrices luctus velit, vel dignissim eros iaculis vel. Maecenas non sodales quam. Ut eget dolor in nulla sagittis tempor ut sit amet purus. Aliquam id nulla a eros elementum pulvinar et sit amet justo. 
+                Nam nec auctor nisl. Suspendisse dignissim sodales risus, sit amet gravida lorem posuere ut. Sed a finibus lectus. Sed tristique erat et dictum tincidunt. Nunc nisi diam, dapibus sed risus sit amet, volutpat commodo mi. Maecenas mauris nisl, commodo at elementum a, euismod id metus. Suspendisse imperdiet, orci nec sollicitudin ultrices, neque dolor facilisis diam, aliquet efficitur nulla ex ut velit. In fringilla malesuada enim eu placerat. Integer lacinia dolor eu dui venenatis, at mollis urna vestibulum. Morbi ornare erat cursus orci hendrerit consequat. Fusce eu tellus sollicitudin, vehicula justo id, feugiat velit. Etiam nec felis ac libero mattis tincidunt eget eu urna. Duis dapibus auctor risus. Suspendisse id nunc lorem. Vestibulum quis libero ligula. 
+                Nam a enim vitae odio pellentesque posuere. Suspendisse sed fermentum mi, ornare posuere est. Etiam dignissim lacinia neque, vitae luctus tellus accumsan id. Suspendisse aliquet gravida erat, eget dapibus purus rhoncus quis. Nullam id lectus a ante bibendum molestie. Vestibulum a nunc pellentesque, tincidunt risus sit amet, tincidunt velit. Fusce sit amet ultricies mi. Proin ornare vehicula lobortis. Pellentesque velit ligula, tempus id mollis blandit, rutrum vel sapien. Suspendisse ut bibendum felis. Aliquam vel magna enim. Cras diam sem, facilisis auctor vulputate at, laoreet non tortor. 
+                In fringilla vulputate lacus. Praesent posuere leo nibh, non feugiat dui rutrum vel. Aliquam id ligula viverra, blandit sem sit amet, efficitur nulla. Suspendisse hendrerit pretium massa, semper egestas massa mattis in. Suspendisse potenti. Vivamus ut odio vestibulum, venenatis ex vel, cursus lorem. Vestibulum sapien lorem, vestibulum at accumsan et, ornare et est. Pellentesque condimentum vulputate quam et imperdiet.
+                Aenean nec magna nec nisl accumsan fermentum. Quisque vel sodales sapien. Nunc laoreet erat lorem, eu facilisis ipsum euismod eget. Nullam quam eros, ultrices ut sapien vel, laoreet lacinia sem. Duis sodales lacinia odio, ut commodo odio vulputate sodales. Nunc mollis feugiat ipsum, in auctor dolor ultricies et. Sed vitae fermentum augue, eu ullamcorper quam.
+                    </TextBlock>
+                </ScrollViewer>
+            </Grid>
+        </RelativePanel>
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup>
+                <VisualState>
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="1300"/>
+                    </VisualState.StateTriggers>
+
+                </VisualState>
+
+                <VisualState>
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="900"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="DetailsPane.Visibility" Value="Visible"/>
+                        <Setter Target="Details.(RelativePanel.Below)" Value="Img"/>
+                        <Setter Target="Img.(RelativePanel.RightOf)" Value=""/>
+                        <Setter Target="Img.Margin" Value="100,30,30,0"/>
+                        <Setter Target="Img.(RelativePanel.AlignVerticalCenterWithPanel)" Value="False"/>
+                    </VisualState.Setters>
+                </VisualState>
+
+                <VisualState>
+                    <VisualState.StateTriggers >
+                        <AdaptiveTrigger MinWindowWidth="0"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="DetailsPane.Visibility" Value="Collapsed"/>
+                    </VisualState.Setters>
+                </VisualState>
+
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+
+    </Grid>
+</Page>
